@@ -204,7 +204,7 @@
       "ratings": 48,
       "image": "https://scontent.fplu4-1.fna.fbcdn.net/v/t51.82787-15/562561458_18118746181515050_2890211934299688029_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rvT_CZZJTWQQ7kNvwEZ1WSz&_nc_oc=AdnASnAfohf7ywO9epTqkFLkFdnADziQD_toVb18XWFDibB8mCroJycIqfbP5KYSwTgwu38rTVJAyxqLwAfQ6fxg&_nc_zt=23&_nc_ht=scontent.fplu4-1.fna&_nc_gid=2qV8ieFTXbQbRfbTry6LHw&oh=00_Afnkeg7wOQ2fpX36XbgghkWqalwpESZ1EMGULMYtBttqwA&oe=6937FBF0",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -217,7 +217,7 @@
       "ratings": 96,
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/cb/e6/a1/caption.jpg?w=1200&h=1200&s=1",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -230,7 +230,7 @@
       "ratings": 64,
       "image": "https://portalbelohorizonte.com.br/sites/default/files/arquivos/comer-e-beber/2022-07/280309779_3234387410179147_6904796014869648755_n.jpg",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -243,7 +243,7 @@
       "ratings": 88,
       "image": "https://lh6.googleusercontent.com/proxy/F0CSgq9lAcPXIVsgIpaINaMW_xOda3j_eANyginOFbY7NHAccki27stzJ50dEpFaPg79GS1qxkrrGTl55t1Wy2PzZMxrmHcA7yv5tL3vS4kDpyQXlvKiO9xcr72ErIlczHEFiOSLmCJLRxoh1q2QysJauQ5NlbQDnEHjPkpB2JsR",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -256,7 +256,7 @@
       "ratings": 142,
       "image": "https://images.happycow.net/venues/1024/67/29/hcmp67298_289885.jpeg",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -269,7 +269,7 @@
       "ratings": 71,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeSWCFXonkb555z5Bn9XVhvO-vlwpMUvXbOQ&s",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -282,7 +282,7 @@
       "ratings": 53,
       "image": "https://portalbelohorizonte.com.br/sites/default/files/arquivos/comer-e-beber/2019-09/202-1_0.jpg",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -295,7 +295,7 @@
       "ratings": 60,
       "image": "https://strapi-y7hp.onrender.com/uploads/CABERNET_BUTIQUIM_13_03b2b03301.webp",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -308,7 +308,7 @@
       "ratings": 79,
       "image": "https://portalbelohorizonte.com.br/sites/default/files/arquivos/comer-e-beber/2024-05/441082812_471215178660143_6792694318693077820_n.jpg",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     },
@@ -321,7 +321,7 @@
       "ratings": 95,
       "image": "https://mgturismo.com.br/wp-content/uploads/2025/02/Nie-8-scaled.jpg",
       "tags": [
-        "date"
+        "dates"
       ],
       "destaque": false
     }
@@ -433,10 +433,7 @@
       "authorId": null,
       "authorName": "Anônimo",
       "category": "Geral",
-      "tags": [
-        "#dica",
-        "#pergunta"
-      ],
+      "tags": ["#dica", "#pergunta"],
       "views": 12,
       "createdAt": "2025-12-06T17:25:00.000Z",
       "id": 2
@@ -447,9 +444,7 @@
       "authorId": null,
       "authorName": "Anônimo",
       "category": "Eventos",
-      "tags": [
-        "#pergunta"
-      ],
+      "tags": ["#pergunta"],
       "views": 7,
       "createdAt": "2025-12-06T17:26:00.000Z",
       "id": 3
@@ -460,10 +455,7 @@
       "authorId": null,
       "authorName": "Anônimo",
       "category": "Lugares",
-      "tags": [
-        "#review",
-        "#dica"
-      ],
+      "tags": ["#review", "#dica"],
       "views": 18,
       "createdAt": "2025-12-06T17:27:00.000Z",
       "id": 4
@@ -474,9 +466,7 @@
       "authorId": null,
       "authorName": "Anônimo",
       "category": "Geral",
-      "tags": [
-        "#dica"
-      ],
+      "tags": ["#dica"],
       "views": 5,
       "createdAt": "2025-12-06T17:28:00.000Z",
       "id": 5

@@ -19,10 +19,10 @@ function normalizeTag(tag) {
 // termo atual da busca (normalizado)
 let searchQuery = '';
 
-// Helper: detecta se o lugar tem a tag 'date'
+// Helper: detecta se o lugar tem a tag 'dates'
 function hasDatesTag(lugar) {
     if (!lugar || !lugar.tags) return false;
-    return (lugar.tags || []).map(normalizeTag).includes('date');
+    return (lugar.tags || []).map(normalizeTag).includes('dates');
 }
 
 // verifica se um lugar corresponde ao termo de busca atual
@@ -114,8 +114,8 @@ function isFavorito(id) {
 function renderizarApp() {
     const root = document.getElementById('home-content');
     if (!root) return;
-    // Inclui locais com tag 'date' na renderização da HOME
-    const lugaresVisiveis = lugares;
+    // Exclui locais com tag 'dates' da renderização da HOME
+    const lugaresVisiveis = lugares.filter(l => !hasDatesTag(l));
     const lugaresPorCategoria = agruparPorCategoria(lugaresVisiveis);
     const lugaresDestaque = lugaresVisiveis.filter(l => l.destaque && passesTagFilter(l) && matchesSearch(l));
     const hasActiveFilters = activeTagFilters && activeTagFilters.length > 0;
@@ -123,8 +123,8 @@ function renderizarApp() {
 
     if (isSearching) {
         // Quando em modo busca, exibimos apenas os cards que batem com a pesquisa
-        // Não exclui 'date' durante busca na HOME
-        const resultados = lugares.filter(l => passesTagFilter(l) && matchesSearch(l));
+        // Também excluir 'dates' durante busca na HOME
+        const resultados = lugares.filter(l => !hasDatesTag(l) && passesTagFilter(l) && matchesSearch(l));
         root.innerHTML = `
             <main class="main-content-padding">
                 <div class="container-home no-carousel">

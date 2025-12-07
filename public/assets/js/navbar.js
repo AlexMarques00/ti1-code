@@ -75,6 +75,7 @@ const navbarContent = `
     <li><a href="favorites.html">Favoritos</a></li>
     <li><a href="map.html">Mapa</a></li>
     <li><a href="roulette.html">Roleta</a></li>
+    <li><a href="dates.html">Dates</a></li>
     <li><a href="match.html">Match</a></li>
     <li><a href="forum.html">Fórum</a></li>
     <li><a href="faq.html">FAQ</a></li>
