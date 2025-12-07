@@ -531,7 +531,7 @@ async function inicializarDados() {
     
     try {
         // Faz a requisição para o endpoint de lugares
-        const response = await fetch('http://localhost:3000/places'); 
+        const response = await fetch('/places'); 
         
         if (!response.ok) {
             throw new Error(`Erro de rede: ${response.status}`);
