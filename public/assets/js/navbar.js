@@ -62,8 +62,8 @@ const navbarContent = `
             <label for="filterParque">Parque</label>
           </div>
           <div class="filter-option">
-            <input type="checkbox" id="filterBoate">
-            <label for="filterBoate">Boate</label>
+            <input type="checkbox" id="filterDate">
+            <label for="filterDate">Date</label>
           </div>
           <div class="filter-option">
             <input type="checkbox" id="filterCultura">
@@ -75,7 +75,6 @@ const navbarContent = `
     <li><a href="favorites.html">Favoritos</a></li>
     <li><a href="map.html">Mapa</a></li>
     <li><a href="roulette.html">Roleta</a></li>
-    <li><a href="dates.html">Dates</a></li>
     <li><a href="match.html">Match</a></li>
     <li><a href="forum.html">Fórum</a></li>
     <li><a href="faq.html">FAQ</a></li>
