@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BH Places Discovery - Descubra Lugares em Belo Horizonte</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>BH Places Discovery</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Fórum</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar sticky">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Buscar lugares por nome, categoria ou localização...">
+                <button id="clearBtn" class="btn-outline">Limpar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+        <!-- Favorites Section -->
+        <section id="favoritesSection" class="section" style="display: none;">
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fas fa-heart favorite-icon"></i>
+                    <h2>Meus Favoritos</h2>
+                </div>
+                <p class="section-description">Locais que você marcou como favoritos</p>
+            </div>
+            <div id="favoritesGrid" class="places-grid"></div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Descobertas em Destaque</h2>
+                <p class="section-description">Confira os locais mais populares e bem avaliados de Belo Horizonte</p>
+            </div>
+            <div id="featuredGrid" class="places-grid"></div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Explorar Locais</h2>
+            </div>
+            
+            <div class="tabs">
+                <div class="tabs-list" id="categoryTabs">
+                    <button class="tab-trigger active" data-category="Todos">Todos</button>
+                    <button class="tab-trigger" data-category="Cafés">Cafés</button>
+                    <button class="tab-trigger" data-category="Dates">Dates</button>
+                    <button class="tab-trigger" data-category="Turma">Turma</button>
+                    <button class="tab-trigger" data-category="Amigos">Amigos</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="placesGrid" class="places-grid"></div>
+                    <div id="noResults" class="no-results" style="display: none;">
+                        <p>Nenhum local encontrado com os critérios de busca.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fórum - DDD 031</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/forum.css" />
+  <!-- Flaticon icon fonts -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+  <script src="./assets/js/login.js"></script>
+</head>
+<body class="forum-page">
+  <nav class="navbar"></nav>
+  <main class="forum-container">
+    <div class="forum-header">
+      <h1 class="forum-title">Fórum</h1>
+      <button class="btn btn-primary new-topic-btn" id="openComposer"><i class="fi fi-rr-plus-small"></i> Novo tópico</button>
+    </div>
+
+    <div class="forum-grid">
+      <section class="forum-content">
+        <div class="filters-inline">
+          <div class="sidebar-section">
+            <div class="sidebar-title">Categorias</div>
+            <div class="category-list" id="categoryList">
+              <button class="category-pill active" data-cat="all">Todas</button>
+              <button class="category-pill" data-cat="geral">Geral</button>
+              <button class="category-pill" data-cat="eventos">Eventos</button>
+              <button class="category-pill" data-cat="lugares">Lugares</button>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-title">Tags</div>
+            <div class="tag-list" id="tagList">
+              <button class="tag-pill" data-tag="dica">#dica</button>
+              <button class="tag-pill" data-tag="pergunta">#pergunta</button>
+              <button class="tag-pill" data-tag="review">#review</button>
+            </div>
+          </div>
+        </div>
+        <section id="new-thread" class="topic-composer hidden">
+          <h2 class="composer-title">Criar novo tópico</h2>
+          <form id="threadForm">
+            <label class="form-group">Título
+              <input type="text" id="threadTitle" class="form-input" placeholder="Assunto do tópico" required />
+            </label>
+            <label class="form-group">Tags
+              <input type="text" id="threadTags" class="form-input" placeholder="#dica, #pergunta (mínimo 1)" required />
+            </label>
+            <label class="form-group">Conteúdo
+              <textarea id="threadContent" class="form-input" placeholder="Escreva o conteúdo inicial" required></textarea>
+            </label>
+            <div class="composer-actions">
+              <div class="actions-left">
+                <button type="button" class="btn btn-secondary" id="cancelComposer">Cancelar</button>
+              </div>
+              <button type="submit" class="btn btn-primary">Publicar tópico</button>
+            </div>
+            <div id="threadError" class="form-error" style="color:#b00020; margin-top:8px; display:none;">Adicione ao menos uma tag.</div>
+          </form>
+        </section>
+
+        <section id="threadsList" class="threads-section">
+          <h2 class="section-title"><i class="fi fi-rr-comments"></i> Tópicos recentes</h2>
+          <div id="threads" class="thread-list list-view"></div>
+        </section>
+      </section>
+    </div>
+
+    
+
+    <template id="threadItemTpl">
+      <div class="thread-item topic-card list-row" data-cat="geral">
+        <div class="row-left">
+          <div class="avatar"><img class="avatar-img" alt="Avatar" style="display:none;" /><span class="avatar-initial">A</span></div>
+        </div>
+        <div class="row-center">
+          <h3 class="thread-title topic-title"></h3>
+          <p class="thread-meta topic-meta"></p>
+          <div class="topic-tags"></div>
+        </div>
+        <div class="row-right">
+          <div class="topic-stats">
+            <span class="stat"><i class="fi fi-rr-comment"></i><span class="replies-count">0</span></span>
+            <span class="stat"><i class="fi fi-rr-eye"></i><span class="views-count">0</span></span>
+          </div>
+        </div>
+        <div class="row-body">
+          <p class="thread-body"></p>
+          <details class="thread-posts">
+            <summary class="reply-toggle" aria-label="Ver respostas">
+              <i class="fi fi-rr-comment-alt-middle"></i>
+            </summary>
+            <div class="posts reply-list"></div>
+            <form class="postForm topic-composer">
+              <label class="form-group">Resposta
+                <textarea class="postContent form-input" placeholder="Escreva sua resposta" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary"><i class="fi fi-rr-send"></i> Enviar resposta</button>
+              <div class="form-error post-error" style="display:none;">Faça login para responder.</div>
+            </form>
+          </details>
+        </div>
+      </div>
+    </template>
+  </main>
+
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/forum.js"></script>
+</body>
+</html>

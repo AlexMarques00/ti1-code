@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DDD 031 - FAQ</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/faq.css" />
+  <script src="./assets/js/login.js"></script>
+</head>
+
+<body>
+  <nav class="navbar"></nav>
+
+  <main>
+    <section class="faq-container">
+      <div class="faq-header">
+        <img class="faq-title-img" src="https://img.freepik.com/vetores-gratis/bolhas-de-fala-com-pergunta-e-resposta_78370-6187.jpg?semt=ais_hybrid&w=740&q=80" alt="FAQ - Perguntas e Respostas" />
+        <p class="faq-subtitle">Encontre respostas para as principais dúvidas sobre nossa plataforma</p>
+        <div class="faq-search" role="search">
+          <label for="faq-search-input" class="visually-hidden">Buscar perguntas</label>
+          <input id="faq-search-input" type="search" placeholder="Buscar por palavras-chave..." autocomplete="off" />
+        </div>
+      </div>
+
+      <div class="faq-list" role="list" aria-live="polite" aria-busy="false">
+        <!-- As perguntas serão adicionadas aqui pelo JavaScript -->
+      </div>
+      <p class="faq-empty" hidden>Nenhuma pergunta encontrada.</p>
+    </section>
+  </main>
+
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/faq.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DDD 031 - Match</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script src="./assets/js/login.js"></script>
+</head>
+
+<body class="match-page">
+  <nav class="navbar">
+    
+  </nav>
+
+  <main>
+   <div class="container-match">
+        <!-- Página de Votação -->
+        <div id="votingPage" class="content">
+            <h1>Como Jogar:</h1>
+            <p class="instructions">
+              Digite um lugar e adicione com Enter ou no botão '+'.<br>
+              Depois, use o '+' para votar e o '-' para remover um voto.
+              Se uma opção chegar a -1, ela sai da lista. Ao finalizar, clique em "Confirmar".
+            </p>
+
+            <div class="options-container" id="optionsContainer">
+                <!-- Opções serão adicionadas aqui -->
+            </div>
+
+              
+            
+            <div class="button-container">
+                <button class="btn-confirm" onclick="confirmVotes()">Confirmar</button>
+            </div>
+             
+           
+        </div>
+        
+        
+
+        <!-- Página de Resultado -->
+<div id="resultPage" class="content result-container hidden">
+    <h1>Lugar Vencedor:</h1>
+
+    <!-- Nome do lugar -->
+    <div class="winner-name" id="winnerName"></div>
+
+    <!-- Endereço -->
+    <div class="winner-address">
+        <span>Ebaaaaaa!!!</span>
+        
+    </div>
+     <div id="gifContainer">
+        <!-- O gif será exibido aqui -->
+      </div>
+
+    <button class="btn-reset" onclick="resetGame()">Começar Novamente</button>
+</div>
+  </main>
+
+
+
+
+  <script src="./assets/js/match.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+
+
+
+
+</body>
+
+</html>

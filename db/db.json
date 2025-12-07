@@ -1,0 +1,549 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com"
+    },
+    {
+      "id": 2,
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com"
+    },
+    {
+      "id": 3,
+      "login": "rommel",
+      "senha": "123",
+      "nome": "Rommel",
+      "email": "rommel@gmail.com"
+    },
+    {
+      "login": "Alex",
+      "senha": "",
+      "nome": "Alex Marques",
+      "email": "alex@gmail.com",
+      "id": 4
+    }
+  ],
+  "places": [
+    {
+      "id": 1,
+      "nome": "Praça da Liberdade",
+      "descricao": "Um icônico complexo paisagístico e arquitetônico, cercado por museus e centros culturais.",
+      "endereco": "Praça da Liberdade, s/n - Savassi, Belo Horizonte",
+      "latitude": -19.932,
+      "longitude": -43.9387,
+      "rating": 4.8,
+      "ratings": 234,
+      "image": "https://blog.blablacar.com.br/wp-content/uploads/2024/04/bh-praca-da-liberdade-5.webp",
+      "tags": [
+        "parque"
+      ],
+      "destaque": true
+    },
+    {
+      "id": 2,
+      "nome": "Bar 222",
+      "descricao": "Tradicional bar e restaurante conhecido pelo ambiente agradável e culinária de boteco.",
+      "endereco": "Rua Francisco Deslandes, 222 - Anchieta, Belo Horizonte",
+      "latitude": -19.9515,
+      "longitude": -43.9318,
+      "rating": 4.4,
+      "ratings": 544,
+      "image": "https://images.squarespace-cdn.com/content/v1/6697ffeb0f8be1186586d8b3/61b3474f-7d09-497a-99e5-c0843cb7e3c7/20241107_The+2220472+Final.jpg",
+      "tags": [
+        "bar"
+      ],
+      "destaque": true
+    },
+    {
+      "id": 3,
+      "nome": "Cachaçaria Lamparina (Mercado Novo)",
+      "descricao": "Bar especializado em cachaças artesanais mineiras e drinks criativos em um ambiente descolado.",
+      "endereco": "Av. Olegário Maciel, 742 - Centro, Belo Horizonte",
+      "latitude": -19.9207,
+      "longitude": -43.9448,
+      "rating": 4.7,
+      "ratings": 234,
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/78/ff/ac/nossa-prateleira-lotada.jpg?w=900&h=-1&s=1",
+      "tags": [
+        "bar"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 4,
+      "nome": "Coco Bambu Anchieta",
+      "descricao": "Famoso restaurante especializado em frutos do mar, com pratos fartos e ambiente sofisticado.",
+      "endereco": "Av. Francisco Deslandes, 900 - Anchieta, Belo Horizonte",
+      "latitude": -19.95,
+      "longitude": -43.93,
+      "rating": 4.6,
+      "ratings": 234,
+      "image": "https://premio.abrasce.com.br/wp-content/uploads/2022/02/abrasce-premio-abrasce-cases-2019-anchieta-garden-shopping-3.jpg",
+      "tags": [
+        "restaurante"
+      ],
+      "destaque": true
+    },
+    {
+      "id": 5,
+      "nome": "Outback Steakhouse - Pátio Savassi",
+      "descricao": "Restaurante de temática australiana, famoso pelas carnes, costela e aperitivos.",
+      "endereco": "Av. do Contorno, 6061 - São Pedro, Belo Horizonte",
+      "latitude": -19.9384,
+      "longitude": -43.9339,
+      "rating": 4.5,
+      "ratings": 234,
+      "image": "https://assets.multiplan.com.br/Multiplan/filer_public/c0/73/c073feb7-9328-4506-831c-1cb715106c40/pss__aba_lojas_-_outback-_imagem_interna25_-_pss_4.webp?ims=x800",
+      "tags": [
+        "restaurante"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 6,
+      "nome": "Praça do Papa",
+      "descricao": "Mirante com uma vista panorâmica espetacular da cidade, ideal para relaxar e apreciar o pôr do sol.",
+      "endereco": "Av. Agulhas Negras, s/n - Mangabeiras, Belo Horizonte",
+      "latitude": -19.9575,
+      "longitude": -43.9146,
+      "rating": 4.9,
+      "ratings": 234,
+      "image": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/263000/263005-Popes-Square-Belo.jpg",
+      "tags": [
+        "parque"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 7,
+      "nome": "Mercado Central",
+      "descricao": "Tradicional mercado com uma enorme variedade de produtos típicos, queijos, doces e bares animados.",
+      "endereco": "Av. Augusto de Lima, 744 - Centro, Belo Horizonte",
+      "latitude": -19.9225,
+      "longitude": -43.9431,
+      "rating": 4.8,
+      "ratings": 234,
+      "image": "https://www.quintoandar.com.br/guias/wp-content/uploads/2023/01/Mercado-Central-de-Belo-Horizonte.jpg",
+      "tags": [
+        "bar"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 8,
+      "nome": "Estádio Mineirão",
+      "descricao": "Icônico estádio de futebol, palco de grandes jogos e shows, com possibilidade de visitas guiadas.",
+      "endereco": "Av. Antônio Abrahão Caram, 1001 - São José, Belo Horizonte",
+      "latitude": -19.8661,
+      "longitude": -43.9712,
+      "rating": 4.7,
+      "ratings": 234,
+      "image": "https://portalbelohorizonte.com.br/sites/default/files/arquivos/ao-ar-livre-e-esportes/2021-11/pampulha_qu4rto-studio-0140-1.jpg",
+      "tags": [
+        "cultura"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 9,
+      "nome": "Centro Cultural Banco do Brasil (CCBB)",
+      "descricao": "Espaço cultural com exposições de arte, cinema, teatro e música. Integra o Circuito Liberdade.",
+      "endereco": "Praça da Liberdade, 450 - Funcionários, Belo Horizonte",
+      "latitude": -19.9338,
+      "longitude": -43.9366,
+      "rating": 4.8,
+      "ratings": 234,
+      "image": "https://img-assets.ticketwork.com.br/organizations/186e516334fa7e82fc658903ede1f3ae.jpg",
+      "tags": [
+        "cultura"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 10,
+      "nome": "Parque Municipal Américo Renné Giannetti",
+      "descricao": "O principal parque no coração de BH, com áreas verdes, lago com pedalinhos, e brinquedos.",
+      "endereco": "Av. Afonso Pena, 1377 - Centro, Belo Horizonte",
+      "latitude": -19.9227,
+      "longitude": -43.9348,
+      "rating": 4.6,
+      "ratings": 234,
+      "image": "https://portalbelohorizonte.com.br/sites/default/files/arquivos/ao-ar-livre-e-esportes/2021-11/foto-pbh.jpg",
+      "tags": [
+        "parque"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 11,
+      "nome": "A Pão de Queijaria",
+      "descricao": "Lugar especializado em pão de queijo, com diversas opções de recheios e acompanhamentos.",
+      "endereco": "Rua Antônio de Albuquerque, 852 - Savassi, Belo Horizonte",
+      "latitude": -19.9363,
+      "longitude": -43.9372,
+      "rating": 4.7,
+      "ratings": 334,
+      "image": "https://imgmd.net/images/c_limit%2Cw_1600/v1/guia/1686656/a-pao-de-queijaria-203-5753-l.jpg",
+      "tags": [
+        "cafe"
+      ],
+      "destaque": true
+    },
+    {
+      "id": 12,
+      "nome": "Boteco Nada Contra",
+      "descricao": "Horário: terça a sexta, 17:00-23:30; sábado, 12:00-23:30.",
+      "endereco": "Rua dos Aimorés, 629 - Funcionários, Belo Horizonte",
+      "rating": 4.3,
+      "ratings": 48,
+      "image": "https://scontent.fplu4-1.fna.fbcdn.net/v/t51.82787-15/562561458_18118746181515050_2890211934299688029_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rvT_CZZJTWQQ7kNvwEZ1WSz&_nc_oc=AdnASnAfohf7ywO9epTqkFLkFdnADziQD_toVb18XWFDibB8mCroJycIqfbP5KYSwTgwu38rTVJAyxqLwAfQ6fxg&_nc_zt=23&_nc_ht=scontent.fplu4-1.fna&_nc_gid=2qV8ieFTXbQbRfbTry6LHw&oh=00_Afnkeg7wOQ2fpX36XbgghkWqalwpESZ1EMGULMYtBttqwA&oe=6937FBF0",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 13,
+      "nome": "Fugu Izakaya",
+      "descricao": "Horário: quarta e quinta, 18:00-22:30; sexta, 12:00-14:30 e 18:00-22:30; domingo, 12:00-22:30.",
+      "endereco": "Rua Fernandes Tourinho, 292 - Savassi, Belo Horizonte",
+      "rating": 4.6,
+      "ratings": 96,
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/cb/e6/a1/caption.jpg?w=1200&h=1200&s=1",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 14,
+      "nome": "Florestal",
+      "descricao": "Horário: quarta, quinta e sexta, 18:00-23:00; sábado, 12:00-23:00; domingo, 12:00-18:00.",
+      "endereco": "Av. Assis Chateaubriand, 170 - Floresta, Belo Horizonte",
+      "rating": 4.2,
+      "ratings": 64,
+      "image": "https://portalbelohorizonte.com.br/sites/default/files/arquivos/comer-e-beber/2022-07/280309779_3234387410179147_6904796014869648755_n.jpg",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 15,
+      "nome": "Ofélia Bar",
+      "descricao": "Horário: quarta e quinta, 18:00-00:00; sexta, 18:00-01:00; sábado, 16:00-01:00; domingo, 15:00-22:00.",
+      "endereco": "Rua Rio Grande do Norte, 311 - Funcionários, Belo Horizonte",
+      "rating": 4.4,
+      "ratings": 88,
+      "image": "https://lh6.googleusercontent.com/proxy/F0CSgq9lAcPXIVsgIpaINaMW_xOda3j_eANyginOFbY7NHAccki27stzJ50dEpFaPg79GS1qxkrrGTl55t1Wy2PzZMxrmHcA7yv5tL3vS4kDpyQXlvKiO9xcr72ErIlczHEFiOSLmCJLRxoh1q2QysJauQ5NlbQDnEHjPkpB2JsR",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 16,
+      "nome": "Café com Letras",
+      "descricao": "Horário: domingo a terça, 12:00-23:00; quarta a sábado, 12:00-00:00.",
+      "endereco": "Rua Antônio de Albuquerque, 781 - Savassi, Belo Horizonte",
+      "rating": 4.5,
+      "ratings": 142,
+      "image": "https://images.happycow.net/venues/1024/67/29/hcmp67298_289885.jpeg",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 17,
+      "nome": "Madame Geneva",
+      "descricao": "Horário: quinta a sábado, 19:00-00:00.",
+      "endereco": "R. Elias Antônio Jorge, 21a - Luxemburgo, Belo Horizonte",
+      "rating": 4.6,
+      "ratings": 71,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeSWCFXonkb555z5Bn9XVhvO-vlwpMUvXbOQ&s",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 18,
+      "nome": "Juramento 202",
+      "descricao": "Horário: seg, qua, qui, sex 17:00-00:00; sáb 12:30-00:00; dom 12:30-20:00.",
+      "endereco": "Rua Juramento, 202 - Pompéia, Belo Horizonte",
+      "rating": 4.3,
+      "ratings": 53,
+      "image": "https://portalbelohorizonte.com.br/sites/default/files/arquivos/comer-e-beber/2019-09/202-1_0.jpg",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 19,
+      "nome": "Cabernet Butiquim",
+      "descricao": "Horário: terça a sábado, 11:30-23:30; domingo, 11:30-16:00.",
+      "endereco": "Rua Levindo Lopes, 22 - Funcionários, Belo Horizonte",
+      "rating": 4.4,
+      "ratings": 60,
+      "image": "https://strapi-y7hp.onrender.com/uploads/CABERNET_BUTIQUIM_13_03b2b03301.webp",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 20,
+      "nome": "Nimbos Bar",
+      "descricao": "Horário: quarta a sábado, 18:00-00:00; domingo, 17:00-23:00.",
+      "endereco": "Rua Sergipe, 629 - Savassi, Belo Horizonte",
+      "rating": 4.2,
+      "ratings": 79,
+      "image": "https://portalbelohorizonte.com.br/sites/default/files/arquivos/comer-e-beber/2024-05/441082812_471215178660143_6792694318693077820_n.jpg",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    },
+    {
+      "id": 21,
+      "nome": "Terraço Niê",
+      "descricao": "Horário: seg/ter 11:30-19:00; qua/qui 11:30-00:00; sex/sáb 11:30-03:00.",
+      "endereco": "Rua Rio de Janeiro, 471 - Centro, Belo Horizonte",
+      "rating": 4.5,
+      "ratings": 95,
+      "image": "https://mgturismo.com.br/wp-content/uploads/2025/02/Nie-8-scaled.jpg",
+      "tags": [
+        "dates"
+      ],
+      "destaque": false
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "pergunta": "O que é o DDD 031?",
+      "resposta": "DDD 031 é uma plataforma que ajuda você a descobrir os melhores lugares para sair e se divertir na região de Belo Horizonte e arredores. Você pode explorar restaurantes, bares, parques, centros culturais e muitos outros locais incríveis."
+    },
+    {
+      "id": 2,
+      "pergunta": "Como faço para me registrar?",
+      "resposta": "Clique no botão 'Registrar' na página inicial e preencha seus dados básicos: nome completo, email e senha. Após confirmar, sua conta estará criada e você poderá fazer login imediatamente."
+    },
+    {
+      "id": 3,
+      "pergunta": "A plataforma é gratuita?",
+      "resposta": "Sim, o DDD 031 é completamente gratuito para todos os usuários. Basta se registrar e começar a explorar todos os lugares disponíveis sem pagar nada!"
+    },
+    {
+      "id": 4,
+      "pergunta": "Como funciona o sistema de favoritos?",
+      "resposta": "Você pode marcar qualquer lugar como favorito clicando no ícone de coração na página do lugar. Todos os seus favoritos serão salvos em sua conta e você pode acessá-los a qualquer momento na página de Favoritos."
+    },
+    {
+      "id": 5,
+      "pergunta": "Como faço para filtrar os lugares?",
+      "resposta": "Use os filtros disponíveis na página inicial para buscar por categoria (restaurante, bar, parque, etc.), ou utilize o mapa interativo para explorar lugares por localização. Você também pode visualizar os lugares com melhor avaliação."
+    },
+    {
+      "id": 6,
+      "pergunta": "Os dados de localização são precisos?",
+      "resposta": "Sim, utilizamos coordenadas geográficas precisas para todos os lugares cadastrados. Você pode visualizar a localização exata no mapa interativo e obter direções utilizando seu navegador ou aplicativo de mapas preferido."
+    },
+    {
+      "id": 7,
+      "pergunta": "Posso sugerir um novo lugar?",
+      "resposta": "No momento, você pode entrar em contato conosco através do email de suporte para sugerir novos lugares. Analisaremos sua sugestão e, se atender aos critérios, adicionaremos à plataforma em breve."
+    },
+    {
+      "id": 8,
+      "pergunta": "A plataforma funciona em dispositivos móveis?",
+      "resposta": "Sim! O DDD 031 é totalmente responsivo e funciona perfeitamente em smartphones, tablets e computadores. Você pode acessar de qualquer dispositivo com internet."
+    },
+    {
+      "id": 9,
+      "pergunta": "Como funciona o mapa interativo?",
+      "resposta": "O mapa mostra a localização de todos os lugares cadastrados na plataforma. Você pode clicar em cada marcador para ver detalhes básicos, ou acessar a página completa do lugar para mais informações, avaliações e comentários."
+    },
+    {
+      "id": 10,
+      "pergunta": "Posso usar a plataforma offline?",
+      "resposta": "Não, a plataforma requer conexão com a internet para acessar os dados atualizados de lugares, avaliações e mapa interativo. Certifique-se de estar conectado para uma melhor experiência."
+    },
+    {
+      "id": 11,
+      "pergunta": "O que fazer se encontrar informações incorretas?",
+      "resposta": "Se encontrar um erro na descrição, endereço ou informações de um lugar, entre em contato conosco pelo email de suporte. Faremos a correção assim que possível para manter a qualidade da plataforma."
+    },
+    {
+      "id": 12,
+      "pergunta": "Há suporte disponível?",
+      "resposta": "Sim! Você pode entrar em contato com nosso time de suporte por email. Respondemos as solicitações em até 24 horas úteis. Também pode conferir esta seção de FAQ para respostas rápidas."
+    },
+    {
+      "id": 13,
+      "pergunta": "Posso seguir outros usuários ou lugares?",
+      "resposta": "Atualmente, a plataforma permite que você marque lugares como favoritos. Futuras atualizações podem incluir a funcionalidade de seguir usuários e receber recomendações personalizadas."
+    },
+    {
+      "id": 14,
+      "pergunta": "Qual é a melhor forma de descobrir novos lugares?",
+      "resposta": "Você pode explorar por categoria, usar o mapa interativo para navegar pela cidade, verificar os lugares em destaque ou procurar por lugares com as melhores avaliações. Também vale conferir regularmente, pois novos lugares são adicionados frequentemente."
+    },
+    {
+      "id": 15,
+      "pergunta": "Posso criar listas personalizadas de lugares?",
+      "resposta": "No momento, você pode usar a funcionalidade de Favoritos para salvar os lugares que gosta. Uma futura atualização pode permitir criar múltiplas listas personalizadas para organizar seus lugares por tema ou ocasião."
+    },
+    {
+      "id": 16,
+      "pergunta": "Como faço para adicionar um lugar aos meus favoritos?",
+      "resposta": "Na página de detalhes de qualquer lugar, você encontrará um botão com um ícone de coração escrito \"Favoritar\". Basta clicar nele para adicionar o local à sua lista de favoritos. Você pode gerenciar sua lista na página \"Favoritos\". Para remover um lugar dos favoritos, clique no botão \"Remover\"."
+    },
+    {
+      "id": 17,
+      "pergunta": "O que devo fazer se um lugar estiver permanentemente fechado?",
+      "resposta": "Se você notar que um lugar listado está permanentemente fechado ou com informações desatualizadas, por favor, entre em contato conosco pelo email de suporte. Agradecemos sua ajuda para manter a plataforma precisa."
+    },
+    {
+      "id": 18,
+      "pergunta": "Onde encontro o email do time de suporte?",
+      "resposta": "Você pode encontrar o email de suporte na seção \"Sobre nós\" do site ou na parte inferior da página inicial. Estamos aqui para ajudar com qualquer dúvida ou problema que você possa ter! Lá você também pode encontrar o nosso Github com outros projetos feitos por nós."
+    }
+  ],
+  "threads": [
+    {
+      "title": "aaaaaa?",
+      "content": "aaaaaaaaaa",
+      "authorId": null,
+      "authorName": "Anônimo",
+      "createdAt": "2025-12-06T16:48:58.571Z",
+      "id": 1
+    },
+    {
+      "title": "Melhores bares na Savassi",
+      "content": "Quais bares vocês recomendam na Savassi para um rolê tranquilo?",
+      "authorId": null,
+      "authorName": "Anônimo",
+      "category": "Geral",
+      "tags": ["#dica", "#pergunta"],
+      "views": 12,
+      "createdAt": "2025-12-06T17:25:00.000Z",
+      "id": 2
+    },
+    {
+      "title": "Eventos de fim de semana",
+      "content": "Algum evento legal rolando esse fim de semana em BH?",
+      "authorId": null,
+      "authorName": "Anônimo",
+      "category": "Eventos",
+      "tags": ["#pergunta"],
+      "views": 7,
+      "createdAt": "2025-12-06T17:26:00.000Z",
+      "id": 3
+    },
+    {
+      "title": "Melhor lugar para ver o pôr do sol",
+      "content": "Praça do Papa ainda é a melhor? Alguma dica de horário?",
+      "authorId": null,
+      "authorName": "Anônimo",
+      "category": "Lugares",
+      "tags": ["#review", "#dica"],
+      "views": 18,
+      "createdAt": "2025-12-06T17:27:00.000Z",
+      "id": 4
+    },
+    {
+      "title": "Restaurantes para comemorar aniversário",
+      "content": "Sugestões de restaurantes com ambiente bacana para comemorar?",
+      "authorId": null,
+      "authorName": "Anônimo",
+      "category": "Geral",
+      "tags": ["#dica"],
+      "views": 5,
+      "createdAt": "2025-12-06T17:28:00.000Z",
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "threadId": 1,
+      "content": "julia",
+      "authorId": null,
+      "authorName": "Anônimo",
+      "createdAt": "2025-12-06T17:18:15.606Z",
+      "id": 1
+    },
+    {
+      "threadId": 2,
+      "content": "222 e Nada Contra são ótimos para começar a noite.",
+      "authorId": null,
+      "authorName": "Alex",
+      "createdAt": "2025-12-06T17:30:00.000Z",
+      "id": 2
+    },
+    {
+      "threadId": 2,
+      "content": "Pra algo mais tranquilo, Café com Letras funciona bem.",
+      "authorId": null,
+      "authorName": "Mariana",
+      "createdAt": "2025-12-06T17:31:00.000Z",
+      "id": 3
+    },
+    {
+      "threadId": 3,
+      "content": "Tem show no Mercado Novo no sábado à noite.",
+      "authorId": null,
+      "authorName": "Pedro",
+      "createdAt": "2025-12-06T17:32:00.000Z",
+      "id": 4
+    },
+    {
+      "threadId": 3,
+      "content": "Feira gastronômica na Savassi no domingo pela manhã.",
+      "authorId": null,
+      "authorName": "Luiza",
+      "createdAt": "2025-12-06T17:33:00.000Z",
+      "id": 5
+    },
+    {
+      "threadId": 4,
+      "content": "Praça do Papa é ótima, mas chegue antes das 17h.",
+      "authorId": null,
+      "authorName": "Rafael",
+      "createdAt": "2025-12-06T17:34:00.000Z",
+      "id": 6
+    },
+    {
+      "threadId": 4,
+      "content": "Parque Municipal também tem um pôr do sol bonito.",
+      "authorId": null,
+      "authorName": "Bianca",
+      "createdAt": "2025-12-06T17:35:00.000Z",
+      "id": 7
+    },
+    {
+      "threadId": 5,
+      "content": "Coco Bambu tem ambiente bacana e pratos grandes.",
+      "authorId": null,
+      "authorName": "João",
+      "createdAt": "2025-12-06T17:36:00.000Z",
+      "id": 8
+    },
+    {
+      "threadId": 5,
+      "content": "Outback no Pátio Savassi é sempre uma boa pedida.",
+      "authorId": null,
+      "authorName": "Camila",
+      "createdAt": "2025-12-06T17:37:00.000Z",
+      "id": 9
+    }
+  ]
+}

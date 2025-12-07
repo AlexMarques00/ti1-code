@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Local - BH Places Discovery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>BH Places Discovery</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Fórum</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+        <button class="btn-back" onclick="window.location.href='index.html'">
+            <i class="fas fa-arrow-left"></i> Voltar
+        </button>
+
+        <div id="placeDetails" class="detail-layout">
+            <!-- Content will be loaded by JavaScript -->
+        </div>
+
+        <div id="notFound" class="not-found" style="display: none;">
+            <p>Local não encontrado.</p>
+            <button class="btn-primary" onclick="window.location.href='index.html'">Voltar para Home</button>
+        </div>
+    </main>
+
+    <script src="details.js"></script>
+</body>
+</html>
