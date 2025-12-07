@@ -41,7 +41,7 @@
     }
 
     try {
-      const res = await fetch('http://localhost:3000/places');
+      const res = await fetch('/places');
       if (!res.ok) throw new Error('Failed to fetch places');
       places = await res.json();
     } catch (err) {
