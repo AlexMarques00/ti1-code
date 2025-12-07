@@ -55,7 +55,7 @@
     }
 
     try {
-      const res = await fetch('http://localhost:3000/places');
+      const res = await fetch('/places');
       if (!res.ok) throw new Error('Falha ao carregar places');
       const places = await res.json();
 
@@ -133,7 +133,7 @@
       document.querySelectorAll('.details-btn').forEach(btn => {
         btn.addEventListener('click', async (e) => {
           const id = parseInt(e.currentTarget.dataset.id);
-          const place = dates.find(p => p.id === id) || (await (await fetch('http://localhost:3000/places/'+id)).json());
+          const place = dates.find(p => p.id === id) || (await (await fetch('/places/'+id)).json());
           if (typeof mostrarDetalhes === 'function') {
             mostrarDetalhes(place);
           } else if (typeof showDetailsModal === 'function') {
@@ -146,7 +146,7 @@
       });
 
     } catch (err) {
-      root.innerHTML = '<p>Erro ao carregar locais. Verifique se o JSON Server está rodando em http://localhost:3000</p>';
+      root.innerHTML = '<p>Erro ao carregar locais. Verifique se o JSON Server está rodando.</p>';
       console.error(err);
     }
   }
